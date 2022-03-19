@@ -32,6 +32,7 @@ public class VirtualJoystick01 : MonoBehaviour, IBeginDragHandler, IDragHandler,
     {
         Debug.Log("드래그 시작 합니다.");
 
+        controller.Move(Vector2.zero);
         ControlJoystickLever(eventData);
         isInput = true;
     }
